@@ -1,0 +1,235 @@
+﻿<div class="header">
+    <div class="topbar">
+        <div class="topinfor">
+            <a class="logo01" href="@Url.Content("~/")">芙拉花店</a>JUN旗下产品
+            <div class="topicons">
+                <div class="usernames">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <a href="@Url.Content("~/account/signout")">退出</a>
+                    }
+                </div>
+                <div class="ticon ThisWrap">
+                    <a href="@Url.Content("~/i")" class="ti ti01 ThisTitle"></a>
+                    <div class="quicklogin ThisList">
+                        <span class="navarrow">&nbsp;</span>
+                        <div class="quickinbox">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>
+                                        帐号：
+                                    </td>
+                                    <td>
+                                        <input type="text" value="Your Email" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        密码：
+                                    </td>
+                                    <td>
+                                        <input type="text" value="Your Email" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        <span class="remcode">
+                                            <input type="checkbox" />
+                                            <font>记住密码</font>
+                                        </span><a class="getcode" href="#">忘记密码？</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        <a class="theblack" href="login.aspx"><font>登&nbsp;&nbsp;&nbsp;&nbsp;录</font></a>
+                                        <a class="thered" href="registered.aspx"><font>注&nbsp;&nbsp;&nbsp;&nbsp;册</font></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        其他帐号登录：
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <a class="thelogup qqlogup" href="#" title="QQ帐号登录">&nbsp;</a> <a class="thelogup sianlogup"
+                                                                                                          href="#" title="新浪微博帐号登录">&nbsp;</a> <a class="thelogup googlelogup" href="#" title="Google+帐号登录">&nbsp;</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticon ThisWrap">
+                    <a href="#" class="ti ti02 ThisTitle">&nbsp;</a>
+                    <div class="quicklogin ThisList">
+                        <span class="navarrow">&nbsp;</span>
+                        <div class="quickinbox">
+                            <h4 class="quicktitle">
+                                <span>James.bell</span>的购物车
+                            </h4>
+                            <div class="mincartbox">
+                                <div class="mincart">
+                                    <a class="mcimg" href="#">
+                                        <img alt="" src="@Url.Content("~/products/p-img01.png")" />
+                                    </a>
+                                    <div class="mcinfor">
+                                        <h5>
+                                            <a href="#">产品名称</a>
+                                        </h5>
+                                        <p>
+                                            数量：<b>1</b>
+                                        </p>
+                                        <p>
+                                            价格：<b>￥:1000</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mincart">
+                                    <a class="mcimg" href="#">
+                                        <img alt="" src="@Url.Content("~/products/p-img01.png")" />
+                                    </a>
+                                    <div class="mcinfor">
+                                        <h5>
+                                            <a href="#">产品名称</a>
+                                        </h5>
+                                        <p>
+                                            数量：<b>1</b>
+                                        </p>
+                                        <p>
+                                            价格：<b>￥:1000</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mincart">
+                                    <a class="mcimg" href="#">
+                                        <img alt="" src="@Url.Content("~/products/p-img01.png")" />
+                                    </a>
+                                    <div class="mcinfor">
+                                        <h5>
+                                            <a href="#">产品名称</a>
+                                        </h5>
+                                        <p>
+                                            数量：<b>1</b>
+                                        </p>
+                                        <p>
+                                            价格：<b>￥:1000</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mincart">
+                                    <a class="mcimg" href="#">
+                                        <img alt="" src="@Url.Content("~/products/p-img01.png")" />
+                                    </a>
+                                    <div class="mcinfor">
+                                        <h5>
+                                            <a href="#">产品名称</a>
+                                        </h5>
+                                        <p>
+                                            数量：<b>1</b>
+                                        </p>
+                                        <p>
+                                            价格：<b>￥:1000</b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="mcaddup">合计金额：<b>￥：4000.00</b></h3>
+                            <div class="mcaction">
+                                <a class="theblack" href="checkout.aspx"><font>查看购物车</font></a><a class="thered"
+                                                                                                  href="#"><font>立即结算</font></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticon ThisWrap">
+                    <a href="#" class="ti ti03 ThisTitle">&nbsp;</a>
+                    <div class="quicklogin ThisList">
+                        <span class="navarrow">&nbsp;</span>
+                        <div class="quickinbox">
+                            <h4 class="quicktitle">查看帮助</h4>
+                            <ul class="quickhelps">
+                                <li><a href="#">使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                                <li><a href="#">使用帮助</a></li>
+                            </ul>
+                            <div class="mcaction">
+                                <a class="theblack" href="#"><font>查看更多购物指南</font></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticon">
+                    <a href="#" class="ti ti04">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="searchbar">
+        <a href="@Url.Content("~/")" class="logo02">&nbsp;</a>
+        <div class="search">
+            <!--<a href="" class="Voice"><i>&nbsp;</i></a>-->
+            <input class="searchinto" type="text" value="" placeholder="搜索相关产品" x-webkit-speech />
+            <a class="searchicon" href="#"><i>&nbsp;</i></a>
+        </div>
+        <div class="searchaction">
+            <a class="linkcustom" href="~/customize">单独定制</a> <a class="qrcode"
+                                                                 href="javascript:video(0);">扫一扫</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul class="navmenus">
+            <li>
+                <a class="navlink@(ViewContext.RouteData.Values["controller"].ToString().ToLower().Contains("home") ? " navlinkshow" : string.Empty)" href="~">首 页</a>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink ThisTitle@(ViewContext.RouteData.Values["controller"].ToString().ToLower().Contains("product") ? " navlinkshow" : string.Empty)" href="~/product/index">鲜花/永生</a>
+                <div class="navshow ThisList">
+                    <span class="navarrow">&nbsp;</span>
+                    <ul class="nslink">
+                        <li><a href="#">故事订花</a></li>
+                        <li><a href="#">花束</a></li>
+                        <li><a href="#">瓶花</a></li>
+                        <li><a href="#">花盒与花像</a></li>
+                        <li><a href="#">永生花</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink" href="~/product/index/Salon">香氛沙龙</a>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink" href="#">服饰配件</a>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink" href="#">杂 货 铺</a>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink" href="~/story">芙拉故事</a>
+            </li>
+            <li class="ThisWrap">
+                <a class="navlink ThisTitle" href="~/support">特别合作</a>
+                <div class="navshow ThisList">
+                    <span class="navarrow">&nbsp;</span>
+                    <ul class="nslink">
+                        <li><a href="~/support/aboutus">关于我们</a></li>
+                        <li><a href="~/support/contactus">联系我们</a></li>
+                        <li><a href="~/support/partner">合作伙伴</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

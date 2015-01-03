@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "新增收货地址";
+}
+<div class="usright">
+    <div class="maxtitle01">
+        <div class="mtblack01 mtbi08">
+            &nbsp;
+        </div>
+        <div class="mtext01">
+            <h4>
+                @ViewBag.Title
+            </h4>
+            <p>
+                Deliver Address
+            </p>
+        </div>
+    </div>
+    <div class="usbox">
+        <div class="storybox">
+            <div id="deliver_address_create">
+                @Html.Action("DeliveryAddressCreate")
+            </div>
+        </div>
+        <div>
+            <div class="usbintitle">
+                <span>已保存的有效地址</span>
+            </div>
+            <div class="usbintext" id="deliveryaddresslist">
+                @Html.Partial("_DeliveryAddressListPartial")
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿body
+{
+    color: #5C5C5C;
+}
+
+a
+{
+    color: #d13c43;
+    text-decoration: none;
+}
+
+em, i
+{
+    font-style: normal;
+}
+
+.form
+{
+}
+
+.hidden
+{
+    display: none;
+}
+
+.input-txt, textarea, select
+{
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑",tahoma,arial,simsun, "宋体";
+}
+
+.select
+{
+    width: 85px;
+    height: 20px;
+    font-size: 12px;
+    _margin-left: 0;
+}
+
+.input-txt
+{
+    height: 18px;
+    padding: 6px 8px;
+    border: 1px solid #D6D6D6;
+    line-height: 18px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #CCC;
+    outline: none;
+}
+
+.input-flicker
+{
+    border-color: #E44443;
+    background-color: #FFbbbb;
+    color: #aaa;
+}
+
+.input-txt:hover, .input-focus, .blue-shadow
+{
+    border-color: #7DB3E1;
+    box-shadow: 0 0 0 3px #E1F2FF;
+    border-radius: 2px;
+    color: #000;
+}
+
+.input-button
+{
+    _float: left;
+    width: 94px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    margin: 0;
+    color: #fff;
+    font-family: 微软雅黑;
+    text-align: center;
+    background: url(/images/button-bg01.png) 0px 0px;
+}
+
+.red
+{
+    color: #ff0000;
+}
+
+.shadow
+{
+    padding: 0px 4px 4px 0px;
+    margin: 0px 4px 4px 0px;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+
+.form-customize .row label
+{
+    width: 80px;
+}
+
+.form-customize .row .el .input-txt
+{
+    width: 345px;
+    --border: 1px solid #EDEDED;
+}
+
+.form-customize textarea
+{
+    height: 100px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .container
+    {
+        width: 100%;
+    }
+}
+
+img
+{
+    max-width: 100%;
+}

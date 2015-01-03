@@ -1,0 +1,151 @@
+﻿@model LoginObject
+
+@{
+    ViewBag.Title = "登录";
+}
+<div class="contents">
+    <div class="maxtitle01">
+        <div class="mtblack01 mtbi02">
+            &nbsp;
+        </div>
+        <div class="mtext01">
+            <h4>登录您的账户</h4>
+            <p>
+                Sign In Your Account
+            </p>
+        </div>
+    </div>
+    <div class="products">
+        <div class="loginbox">
+            <div class="form">
+                <div class="row">
+                    <div class="el">
+                        @Html.TextBoxFor(m => m.Account, new { @class = "input-txt input-mail", placeholder = "请输入邮箱账户" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="el">
+                        @Html.PasswordFor(m => m.Password, new { @class = "input-txt input-pwd", placeholder = "请输入密码" })
+                    </div>
+                </div>
+                <div class="ext">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </div>
+                <div class="row">
+                    <div class="button-black" id="signin">
+                        <a href="javascript:;">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                    </div>
+                </div>
+                <div class="row">
+                    @Html.ActionLink("创建新账户", "register")/@Html.ActionLink("创建新账户", "forgetpassword")
+                    @*<p>
+                            其他帐号登录
+                        </p>*@
+                </div>
+                @*<div class="row">
+                        <a class="thelogup qqlogup" href="#" title="QQ帐号登录">&nbsp;</a> <a class="thelogup sianlogup"
+                            href="#" title="新浪微博帐号登录">&nbsp;</a> <a class="thelogup googlelogup" href="#" title="Google+帐号登录">&nbsp;</a>
+                    </div>*@
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    var mail = $("#Email");
+                    var password = $("#Password");
+                    var rememberme = $("#RememberMe")
+                    mail.keyup(function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            $("#signin").click();
+                        }
+                    })
+                    password.keyup(function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            $("#signin").click();
+                        }
+                    })
+                    rememberme.keyup(function (e) {
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            $("#signin").click();
+                        }
+                    })
+
+                    $("#signin").click(function () {
+                        if ($.trim(mail.val()) == "") {
+                            forlove.flicker(mail)
+                            return false;
+                        }
+                        if (!/^\w+([-+.]\w+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/i.test(mail.val())) {
+                            common.Error("电子邮箱格式不正确，请重新输入");
+                            mail.focus();
+                            return false;
+                        }
+
+                        if ($.trim(password.val()) == "") {
+                            forlove.flicker(password);
+                            return false;
+                        }
+
+                        var rememberMe = $("#RememberMe");
+                        var fromUrl = getQueryString("fromurl");
+                        forlove.signIn(mail, password, rememberMe, fromUrl);
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+
+@*<div class="row">
+        <div class="col-md-8">
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <h4>使用本地帐户登录。</h4>
+                    <hr />
+                    @Html.ValidationSummary(true)
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.UserName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <div class="checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="登录" class="btn btn-default" />
+                        </div>
+                    </div>
+                    <p>
+                        @Html.ActionLink("注册", "Register") (如果你没有本地帐户)。
+                    </p>
+                }
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new { Action = "ExternalLogin", ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
+    </div>*@
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

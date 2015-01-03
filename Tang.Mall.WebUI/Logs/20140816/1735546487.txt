@@ -1,0 +1,4 @@
+2014-08-16 17:35:54
+异常消息：d:\Projects\Tang\Shopping Mall\Tang.Mall\Tang.Mall.WebUI\Views\Shared\_HeaderPartial.cshtml(128): error CS1061: “System.Web.Mvc.UrlHelper”不包含“Con”的定义，并且找不到可接受类型为“System.Web.Mvc.UrlHelper”的第一个参数的扩展方法“Con”(是否缺少 using 指令或程序集引用?)
+异常方法：Tang.Mall.WebUI.Controllers.HomeController.Compile
+异常类型：System.Web.HttpCompileException

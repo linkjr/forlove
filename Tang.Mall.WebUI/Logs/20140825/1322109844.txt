@@ -1,0 +1,4 @@
+2014-08-25 13:22:10
+异常消息：d:\Projects\Tang\Shopping Mall\Tang.Mall\Tang.Mall.WebUI\Views\Account\Login.cshtml(45): error CS0149: 应输入方法名称
+异常方法：Tang.Mall.WebUI.Controllers.AccountController.Compile
+异常类型：System.Web.HttpCompileException

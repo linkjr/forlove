@@ -1,0 +1,43 @@
+﻿/* 关于/帮助 */
+.aboutnav{ margin-top:20px; float:left; clear:both;}
+.abhome
+{
+    float:left; clear:both; width:960px; padding:20px; margin:20px 0; overflow:hidden;
+    background:#fff url(../images/about.png) left top no-repeat;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+    .abinfor { float:left; clear:both; width:780px; min-height:600px; overflow:hidden; margin-top:20px; margin-left:90px; display:inline; }
+    
+.aboutbox div.usleft { width:240px; }
+    .ablist
+    {
+        float:left; width:240px; background:#fff; border-top:2px solid #D13C43; margin-bottom:20px; overflow:hidden;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+    .aboutbox div.usleft div.ablist:last-child{ margin-bottom:0;}
+        .ablheader
+        {
+            float:left; clear:both; width:100%; height:24px; padding:5px 0; overflow:hidden;
+            background:url("../images/Top-bg02.png") left top repeat-x; border-bottom:1px solid #ddd;
+        }
+        .ablheader b{ float:left; padding:0 10px; line-height:22px;}
+        
+        .abllist
+        {
+            float:left; clear:both; width:100%; margin:0; padding:0; list-style:none; 
+        }
+        .ablhref{ clear:both; height:20px; line-height:20px; overflow:hidden; padding:5px 0 5px 10px; border-left:4px solid #fff; }
+        .ablhref:hover{ border-left:4px solid #000; background:#f6f6f6; }
+        .ablherfshow{ border-left:4px solid #000; background:#f6f6f6; }
+        .ablhref a{ width:100%; float:left; color:#666;}
+        
+        .ablh-icon
+        {
+            float:right; width:13px; height:14px; overflow:hidden; margin:5px 10px; display:inline; cursor:pointer;
+            background:url("../images/i-26.png") left top no-repeat; background-position:0 0;
+        }
+        .ablh-icon:hover{background:url("../images/i-26.png") left top no-repeat; background-position:-13px 0;}

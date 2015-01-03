@@ -1,0 +1,4 @@
+2014-08-16 17:32:49
+异常消息：d:\Projects\Tang\Shopping Mall\Tang.Mall\Tang.Mall.WebUI\Views\Shared\_HeaderPartial.cshtml(80): error CS0103: 当前上下文中不存在名称“WebConfig”
+异常方法：Tang.Mall.WebUI.Controllers.HomeController.Compile
+异常类型：System.Web.HttpCompileException

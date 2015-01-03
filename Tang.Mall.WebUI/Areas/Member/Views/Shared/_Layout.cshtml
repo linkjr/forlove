@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "用户中心";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="@Url.Content("~/images/favicon.ico")" />
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="wrap">
+        <div class="usheader">
+            <div class="usheadbar">
+                <a class="logo01" href="~">ForLove</a>
+                <div class="usearch">
+                    <div class="search">
+                        <input class="searchinto" type="text" value="" placeholder="搜索相关产品" x-webkit-speech />
+                        <a class="searchicon" href="#"><i>&nbsp;</i></a>
+                    </div>
+                    <a class="usgohome" href="~"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="userconter">
+                <div class="usleft">
+                    <div class="uslist">
+                        <h3 class="uslogname">
+                            您好，@User.Identity.Name！
+                        </h3>
+                        <ul class="usinfor">
+                            <li class="usinlist@(ViewContext.RouteData.Values["controller"].ToString().ToLower().Contains("home") ? " ulistshow" : string.Empty)">@Html.ActionLink("基本信息", "index", "home")</li>
+                            <li class="usinlist@(ViewContext.RouteData.Values["controller"].ToString().ToLower().Contains("delivery") ? " ulistshow" : string.Empty)">@Html.ActionLink("收货地址", "deliveryaddress", "delivery")</li>
+                            <li class="usinlist@(ViewContext.RouteData.Values["controller"].ToString().ToLower().Contains("trade") ? " ulistshow" : string.Empty)">@Html.ActionLink("收货地址", "index", "trade")</li>
+                        </ul>
+                    </div>
+                    <div class="usweixin">
+                        <h4>扫描二维码</h4>
+                        <p>
+                            关注芙拉花店微信公众平台
+                        </p>
+                        <div class="wxqrcode">
+                            <img alt="" src="@Url.Content("~/images/qrcode.png")" />
+                        </div>
+                    </div>
+                </div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/mall")
+    @Scripts.Render("~/bundles/fancybox")
+    <script type="text/javascript" src="@Url.Content("~/scripts/jquery.unobtrusive-ajax.min.js")"></script>
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

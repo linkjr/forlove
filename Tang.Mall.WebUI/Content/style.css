@@ -1,0 +1,1699 @@
+﻿
+/*
+============================================================================
+                |         Here is a Flowers Websites style        |
+============================================================================
+*/
+
+/*
+@font-face  
+{
+	font-family:Micfosoft JhengHei;
+	src: url('Fonts/Micfosoft JhengHei.eot');
+	src: url('Fonts/Micfosoft JhengHei.otf');
+	src: url('Fonts/Microsoft YaHei.eot?#iefix') format('embedded-opentype'),
+			 url('Fonts/Micfosoft JhengHei.woff') format('woff'),
+			 url('Fonts/Micfosoft JhengHei.ttf') format('truetype'),
+			 url('Fonts/Micfosoft JhengHei.svg#Micfosoft JhengHei') format('svg');
+}
+*/
+
+body 
+{
+    font-family:"Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","微软雅黑",tahoma,arial,simsun,"宋体";
+    margin:0; padding:0; line-height:normal; font-size:14px;
+    background:#f4f4f4 url(../images/BG-01.png) left top repeat;
+}
+
+img{ border:0;}
+
+a{ text-decoration: none;}
+
+a:hover{ text-decoration: underline;}
+
+input[type="text"], textarea, select{font-family:"Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","微软雅黑",tahoma,arial,simsun,"宋体";}
+
+
+.wrap
+{
+    width:100%; height:auto; margin:0 auto; clear:both; padding:0;
+}
+
+.header
+{
+    width:100%; height:auto; padding:0; margin:0 auto;
+    clear:both;
+}
+.container
+{
+    clear:both; width:1000px; margin:0 auto; position:relative;
+}
+
+.footer
+{
+    clear:both; width:100%; margin:0 auto; height:auto; background:#444;
+}
+
+/*
+======================================================
+                    Top Bar
+======================================================
+*/
+
+.topbar
+{
+    width:100%;
+    height:34px; clear:both; margin:0 auto;
+    background: url(../images/Top-bg01.png) left top repeat-x;
+    border-bottom:1px solid #dddddd;
+}
+.topinfor
+{
+    width:1000px; height:34px; margin:0 auto;
+}
+    .logo01
+    {
+        float:left;
+        font-family:Arial; font-size:18px; font-weight:bold;
+        color:#6d5f39; line-height:34px;
+        text-transform:uppercase;
+    }
+        .logo01:hover{ text-decoration:none; color:#d13c43;} 
+    .topicons
+    {
+        float:right; height:34px; border-right:1px solid #ebebeb;
+    }
+        .usernames
+        {
+            float:left; height:24px; padding:5px;
+            font-size:12px; line-height:22px; color:#666;
+        }
+        .usernames a{color:#d13c43;}
+    
+    /* Top Right Icons Styles */
+    .topicons .ticon:hover{ text-decoration:none;}
+        
+    .ticon
+    {
+        float:left; width:34px; height:34px; cursor:pointer;
+        border-left:1px solid #ebebeb; position:relative;
+    }
+        
+    .ticon .ti{float:left; width:20px; height:20px; margin:7px; clear:both; display:inline;}
+    
+        .ticon .ti:hover{ text-decoration:none;}
+       
+    .ti01
+    {
+        background: url(../images/icon-01.png) left top no-repeat;
+        background-position:0 0;
+    }
+        .ti01:hover
+        {
+            background: url(../images/icon-01.png) left top no-repeat;
+            background-position:0 -20px;
+        }
+    .ti02
+    {
+        background: url(../images/icon-01.png) left top no-repeat;
+        background-position:-20px 0;
+    }
+        .ti02:hover
+        {
+            background: url(../images/icon-01.png) left top no-repeat;
+            background-position:-20px -20px;
+        }
+    .ti03
+    {
+        background: url(../images/icon-01.png) left top no-repeat;
+        background-position:-40px 0;
+    }
+        .ti03:hover
+        {
+            background: url(../images/icon-01.png) left top no-repeat;
+            background-position:-40px -20px;
+        }
+    .ti04
+    {
+        background: url(../images/icon-01.png) left top no-repeat;
+        background-position:-60px 0;
+    }
+        .ti04:hover
+        {
+            background: url(../images/icon-01.png) left top no-repeat;
+            background-position:-60px -20px;
+        }
+
+/*
+======================================================
+                    Quick Login Box
+======================================================
+*/
+
+.quicklogin
+{
+    position:absolute; float:left; clear:both; width:300px;
+    margin-left:-133px; margin-top:29px; display:none; z-index:2;
+    
+}
+.quickinbox
+{
+    float:left; clear:both; width:260px; height:auto;
+    padding:15px 20px; font-size:12px;
+    background:#fff; border-top:1px solid #d13c43;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+    .quickinbox table{ margin:0 auto; padding:0; line-height:22px;}
+    
+        .quickinbox tr td:first-child{ width:50px;}
+        .quickinbox td, .quickinbox th{ padding:5px 0; text-align:left;}
+        
+        .quickinbox th{ border-bottom:1px solid #000;}
+        
+    .quickinbox input[type="text"]
+    {
+        width:200px; height:22px; background:#fff; margin:0; padding:5px;
+        border:1px solid #ededed; line-height:22px;
+    }
+    .quickinbox input[type="checkbox"]
+    {
+        float:left;
+        margin:5px 0; padding:0; border:1px solid #ededed;
+    }
+        .quickinbox font{ float:left; margin:0; margin-left:5px; display:inline;}
+
+    .theblack
+    {
+        float:left; padding:1px; background:#000; color:#fff; text-align:center;
+    }
+        .theblack font
+        {
+            float:left; min-width:60px;
+            height:22px; line-height:20px; border:1px solid #fff; background:#000; margin:0;
+            padding:2px 14px;
+        }
+            .theblack font:hover{ font-weight:bold; line-height:22px; text-decoration:underline;}
+    .thered
+    {
+        float:right;
+        padding:1px; background:#d13c43; color:#fff; text-align:center;
+    }
+        .thered font
+        {
+            float:left; min-width:60px;
+            height:22px; line-height:20px; border:1px solid #fff; background:#d13c43; margin:0;
+            padding:2px 14px;
+        }
+        
+            .thered font:hover{ font-weight:bold; line-height:22px; text-decoration:underline;}
+        
+    .remcode
+    {
+        float:left;
+    }
+    .getcode
+    {
+        float:right; color:#d13c43;
+    }
+        .getcode:hover{ text-decoration:underline;}
+
+    .thelogup
+    {
+        float:left; width:32px; height:32px; margin:5px 5px 0 10px;
+    }
+        .thelogup:hover
+        { text-decoration:none;
+        }
+        .thelogup:first-child
+        {
+            margin-left:0;
+        }
+        .qqlogup
+        {
+            background: url(../images/icon-04.png) left top no-repeat;
+            background-position:0 0;
+        }
+            .qqlogup:hover
+            {
+                background: url(../images/icon-04.png) left top no-repeat;
+                background-position:0 -32px;
+            }
+        .sianlogup
+        {
+            background: url(../images/icon-04.png) left top no-repeat;
+            background-position:-32px 0;
+        }
+            .sianlogup:hover
+            {
+                background: url(../images/icon-04.png) left top no-repeat;
+                background-position:-32px -32px;
+            }
+        .googlelogup
+        {
+            background: url(../images/icon-04.png) left top no-repeat;
+            background-position:-64px 0;
+        }
+            .googlelogup:hover
+            {
+                background: url(../images/icon-04.png) left top no-repeat;
+                background-position:-64px -32px;
+            }
+
+
+        .quicktitle
+        {
+            float:left; clear:both; width:100%;
+            margin:0; padding:5px 0; padding-bottom:10px; margin-bottom:5px;
+            border-bottom:1px solid #000; line-height:normal;
+        }
+            .quicktitle span
+            {
+                float:left; clear:both; margin-right:10px; color:#d13c43;
+            }
+
+
+
+
+
+/* min cart */
+.mincartbox
+{
+    float:left; clear:both; width:100%; overflow:hidden;
+}
+.mincart
+{
+    float:left; clear:both; width:260px; overflow:hidden; min-height:80px; max-height:80px; margin:5px 0;
+    padding-bottom:10px; border-bottom:1px solid #ccc;
+
+}
+.mcimg
+{
+    float:left; width:80px; height:80px; overflow:hidden; margin-right:10px; display:inline;
+}
+    .mcimg img
+    {
+        float:left; min-height:80px; max-width:100%;
+    }
+
+.mcinfor
+{
+    float:left; width:170px; height:80px; overflow:hidden;
+}
+    .mcinfor h5
+    {
+        border-bottom:1px solid #ededed;
+        margin:0; padding:0; width:100%; overflow:hidden;
+        height:26px; margin-bottom:5px; font-size:14px; line-height:24px;
+    }
+        .mcinfor h5 a
+        {
+            color:#000;
+        }
+    .mcinfor p
+    {
+        margin:0; padding:0; width:100%; overflow:hidden;
+        margin-bottom:5px; line-height:normal;
+    }
+        .mcinfor p b
+        {
+            color:#d13c43;
+        }
+    .mcaddup
+    {
+        margin:0; padding:5px; background:#eee;
+        clear:both;
+    }
+        .mcaddup b
+        {
+            color:#d13c43;
+        }
+
+    .mcaction
+    {
+        float:left; clear:both; width:100%; padding:10px 0;
+        margin-top:5px;
+    }
+
+.quickhelps, .quickhelps li
+{
+    float:left;
+    clear:both; margin:0; padding:0;
+    list-style:none;
+}
+    .quickhelps li
+    {
+        line-height:20px; padding:5px 5px 5px 15px; min-width:240px;
+        background:url("../images/i-03.png") left top no-repeat;
+        background-position:5px 7px;
+        border-bottom:1px solid #ededed;
+    }
+        .quickhelps li:hover
+        {
+            background:#eee url("../images/i-03.png") left top no-repeat;
+            background-position:5px 7px;
+        }
+        .quickhelps li a
+        {
+            color:#666; float:left; width:100%;
+        }
+
+
+
+
+ 
+/*
+======================================================
+                    Search Bar
+======================================================
+*/
+.searchbar
+{
+    width:1000px; height:80px; overflow:hidden; background:#fff;
+    clear:both; margin:0 auto; margin-top:20px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+    .logo02
+    {
+        float:left; width:140px; height:80px; overflow:hidden;
+        border-right:1px solid #ededed;
+        background: url(../images/Logo01.png) left center no-repeat;
+    }
+        .logo02:hover{ text-decoration:none;}
+    
+    .search
+    {
+        float:left; width:auto; height:38px; background:#fbfbfb;
+        margin:20px 60px; display:inline; border:1px solid #ededed;
+    }
+        .Voice
+        {
+            float:left; width:38px; height:38px; overflow:hidden;
+            border-right:1px solid #ededed;
+        }
+            .Voice i
+            {
+                float:left; width:20px; height:20px; overflow:hidden; margin:9px; display:inline;
+                background: url(../images/icon-09.png) left top no-repeat;
+                background-position:0 0;
+            }
+                .Voice i:hover
+                {
+                    float:left; width:20px; height:20px; overflow:hidden; margin:9px; display:inline;
+                    background: url(../images/icon-09.png) left top no-repeat;
+                    background-position:0 -20px;
+                }
+        .searchinto
+        {
+            float:left; width:400px; height:28px; padding:5px; margin:0;
+            font-size:12px; color:#999; line-height:28px; border:0;
+            background:#fbfbfb; outline: none;
+        }
+        .searchicon
+        {
+            float:left; width:38px; height:38px; overflow:hidden;
+        }
+            .searchicon i
+            {
+                float:left; width:20px; height:20px; overflow:hidden; margin:9px; display:inline;
+                background: url(../images/icon-08.png) left top no-repeat;
+                background-position:0 0;
+            }
+                .searchicon i:hover
+                {
+                    float:left; width:20px; height:20px; overflow:hidden; margin:9px; display:inline;
+                    background: url(../images/icon-08.png) left top no-repeat;
+                    background-position:0 -20px;
+                }
+        .searchaction
+        {
+            float:right; height:40px; margin:20px; display:inline; overflow:hidden;
+        }        
+        .linkcustom
+        {
+            float:left; height:40px; padding:0 6px 0 34px; margin-right:30px;
+            display:inline; font-size:16px; line-height:38px;
+            font-weight:bold; color:#000;
+            background: url(../images/icon-05.png) left top no-repeat;
+            background-position:6px 0;            
+        }
+            .linkcustom:hover
+            {
+                cursor:pointer; text-decoration:none;
+                background:#eee url(../images/icon-05.png) left top no-repeat;
+                background-position:6px -40px;
+            }
+        .qrcode
+        {
+            float:left; height:40px; padding:0 6px 0 34px;
+            font-size:16px; line-height:38px; line-height:38px;
+            font-weight:bold; color:#000;
+            background: url(../images/icon-06.png) left top no-repeat;
+            background-position:6px 0;
+        }
+            .qrcode:hover
+            {
+                cursor:pointer; text-decoration:none;
+                background:#eee url(../images/icon-06.png) left top no-repeat;
+                background-position:6px -40px;
+            }
+/*
+======================================================
+                    Nav Bar
+======================================================
+*/
+
+.navbar
+{
+    clear:both; margin:0 auto;
+    width:1000px; height:40px; margin-top:20px;
+    background:#fff;
+    border-bottom:3px solid #000;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+    .navmenus, .navmenus li
+    {
+        float:left; margin:0; padding:0; list-style:none;
+        position:relative;
+    }
+        .navmenus li a:hover{ text-decoration:none;}
+        
+    .navlink
+    {
+        float:left; clear:both; height:20px; font-size:14px; font-family:"宋体"; line-height:18px;
+        padding:10px 10px 10px 32px; color:#000; width:auto;
+        background: url(../images/icon-02.png) left top no-repeat;
+        background-position:6px 0;
+    }
+        .navlink:hover
+        {
+            color:#fff;
+            background:#000 url(../images/icon-02.png) left top no-repeat;
+            background-position:6px -40px;
+        }
+        .navlinkshow
+        {
+            color:#fff;
+            background:#000 url(../images/icon-02.png) left top no-repeat;
+            background-position:6px -40px;
+        } 
+            
+       .navshow
+       {
+           float:left; clear:both; position:absolute;
+           margin-top:35px; margin-left:-42%; display:none; z-index:10;
+       }
+           .navarrow
+           {
+               float:left; clear:both; width:100%; height:5px;
+               background: url(../images/i-01.png) top center no-repeat;
+           }
+           .nslink
+           {
+               min-width:200px; max-width:200px; overflow:hidden;
+               font-size:12px; font-family:"宋体";
+               background:#fff; border-top:3px solid #d13c43;
+               -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+           }
+               .nslink, .nslink li, .nslink li a
+               {
+                   float:left; clear:both; width:100%; list-style:none; margin:0; padding:0;
+               }
+                    .nslink li{border-bottom:1px solid #ededed;}
+                    
+                    .nslink li:last-child{ border-bottom:none;}
+                    
+                    .nslink li a { padding:10px; color:#000;}
+                    .nslink li a:hover{ background:#fbfbfb; }
+                    
+
+/*
+======================================================
+                    Footer Bar
+======================================================
+*/
+.footbar
+{
+    clear:both; margin:0 auto; width:1000px; overflow:hidden;
+}
+    .footinfor
+    {
+        float:left; clear:both; height:auto; width:100%;
+        margin:20px 0;
+    }
+        .footinfor .flink:first-child{ margin-left:0;}
+        .flink
+        {
+            float:left; width:150px; min-height:130px; max-height:130px; overflow:hidden;
+            margin-left:20px; font-size:14px;
+            background: url(../images/i-02.png) top left no-repeat;
+        }
+        
+        .flicon
+        {
+            float:left; width:20px; height:20px; background:#f00; margin:5px;
+            display:inline;
+        }
+        
+            .fli01
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:0 0; 
+            }
+            .fli02
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:-20px 0; 
+            }
+            .fli03
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:-40px 0; 
+            }
+            .fli04
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:-60px 0; 
+            }
+            .fli05
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:-80px 0; 
+            }
+            .fli06
+            {
+               background: url(../images/icon-07.png) top left no-repeat;
+               background-position:-100px 0; 
+            }
+    
+        .fltext
+        {
+            float:left; width:100px; padding:0; font-size:12px;
+            margin-left:5px; margin-top:5px; overflow:hidden;
+            display:inline;
+        }
+            .fltext span, .fltext a
+            {
+                float:left; width:100%; clear:both;
+            }
+            
+            .fltext span
+            {
+                height:20px; line-height:22px; font-weight:bold;
+                margin-bottom:5px; color:#aaa;
+            }
+            .fltext a
+            {
+                color:#aaa; line-height:20px; padding-left:10px; margin-top:5px; font-family:"宋体";
+                background: url(../images/i-03.png) left center no-repeat;
+            }
+            
+    .copyright
+    {
+        float:left; clear:both; margin-bottom:20px; width:100%; border-top:1px solid #777;
+        padding-top:20px; color:#777;
+        font-size:10px; line-height:normal; 
+    }
+
+/*
+======================================================
+                    weixin box
+======================================================
+*/
+.weixinbox
+{
+    position:absolute; z-index:10; width:143px; height:auto; background:#fff;
+    border-top: 3px solid #d13c43;
+    right:4%; top:155px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+    .wxclose
+    {
+        float:right; right:0;
+        position:absolute; width:20px; height:20px;
+        margin-top:-12px; margin-right:-12px;
+        background: url(../images/i-07.png) center center no-repeat;
+        cursor:pointer;
+    }
+    .wxinfor 
+    {
+        float:left; clear:both;
+        padding:20px; width:auto; height:auto;
+    }
+    
+    .wxinfor h4, .wxinfor p{ padding:0; margin:0; clear:both;}
+    
+    .wxinfor p{ font-size:14px; padding:5px 0; font-size:13px;}
+    
+    .wxqrcode
+    {
+      float:left; clear:both;
+      border:1px solid #ccc; padding:1px;
+      width:100px; height:100px; overflow:hidden;
+    }
+        .wxqrcode img{ width:100px; height:100px;  margin:0 auto;}
+
+
+/*
+======================================================
+                    contents Bar
+======================================================
+*/
+.contents
+{
+    float:left; clear:both; width:960px;
+    padding:20px; margin:20px 0;
+    background:#fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
+}
+
+.maxtitle01
+{
+    float:left; clear:both; height:80px; width:100%; margin-bottom:20px;
+    background: url(../images/i-04.png) top left repeat-x;
+}
+    .mtblack01
+    {
+        float:left; width:80px; height:80px; padding-right:10px;
+    }
+        .mtbi01
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 0;
+        }
+        .mtbi02
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -80px;
+        }
+        .mtbi03
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -160px;
+        }
+        .mtbi04
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -240px;
+        }
+        .mtbi05
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -320px;
+        }
+        .mtbi06
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -400px;
+        }
+        .mtbi07
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -480px;
+        }
+        .mtbi08
+        {
+            background:#fff url(../images/maxicon.png) top left no-repeat;
+            background-position:0 -560px;
+        }
+        
+        
+        
+        
+        
+        
+    .mtext01
+    {
+        float:left; width:870px; height:80px; overflow:hidden;
+    }
+        .mtext01 h4
+        {
+            margin:0; padding:0; height:34px; font-size:18px; font-weight:normal; line-height:34px; overflow:hidden;
+        }
+        .mtext01 p
+        {
+            margin:0; padding:0; height:30px; line-height:normal;
+            margin-top:13px; line-height:28px; font-size:12px; text-transform: uppercase;
+        }
+
+.mtblack02
+{
+    position:absolute; width:100px; height:80px;
+    left:50%; margin-left:-50px; overflow:hidden;
+    background:#fff url(../images/maxicon.png) top center no-repeat;
+}
+.mtext01-left
+{
+    float:left; width:430px; overflow:hidden;
+}
+.mtext01-left h4, .mtext01-left p
+{
+    text-align:right;
+}
+
+.mtext01-right
+{
+    float:right; width:430px; overflow:hidden;
+}
+.mtext01-right h4, .mtext01-right p
+{
+    text-align:left;
+}
+
+/* Products Categorys */
+
+.thecate
+{
+    float:right; clear:both; position:absolute;
+    right:-26px; margin-top:20px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+    .tcicons
+    {
+        float:left; clear:both; width:16px; height:16px;
+        margin:0; padding:5px; cursor:pointer;
+        background:#000 url(../images/i-08.png) center center no-repeat;
+    }
+        .tcicons:hover
+        {
+            background:#d13c43 url(../images/i-08.png) center center no-repeat;
+        }
+        .tciconshow{background:#d13c43 url(../images/i-08.png) center center no-repeat;}
+    .morelist
+    {
+        margin-top:26px; margin-left:-88px;
+    }
+
+/* hot products */
+.hotproduct
+{
+    float:left; clear:both; width:100%; overflow:hidden;
+    margin-bottom:20px;
+}
+    .hpbox
+    {
+        float:left; position:relative; width:290px; height:auto;
+        margin:15px; margin-top:0; margin-bottom:20px; overflow:hidden;
+    }
+        .hpflorid
+        {
+            position:absolute; width:100%; height:220px; margin:0; padding:0;
+            background: url(../images/i-05.png) top left repeat;
+            color:#fff; display:none;
+        }
+            .hpflorid h4
+            {
+                clear:both; margin:20px 20px 10px 20px;
+                padding-bottom:10px; font-size:14px;
+                border-bottom:1px solid #fff;
+            }
+            .hpflorid p
+            {
+                clear:both; margin:0 20px 20px 20px; line-height:20px; font-size:12px; font-family:"宋体";
+            }
+            
+            .hpflorid a
+            {
+                color: #fff;
+            }
+            .hpflorid p a:hover
+            {
+                text-decoration:none;
+            }
+
+        .hpimg{ float:left; width:100%; height:220px; overflow:hidden; margin-bottom:20px; cursor:pointer;}
+        .hpimg img{ float:left; clear:both;  min-width:100%; max-width:100%; height:100%; margin:0; padding:0;}
+        
+    .hpinfor
+    {
+        float:left; clear:both; width:100%; height:40px; overflow:hidden;
+    }
+        .phdigital
+        {
+            float:left; width:40px; height:40px; overflow:hidden;
+            background: url(../images/i-06.png) center center no-repeat;
+            font-size:24px; color:#fff; text-align:center; line-height:36px;
+        }
+        
+        .hpinfor h4
+        {
+            padding:0; margin:0; margin-left:10px; padding-left:10px; display:inline;
+            width:245px; height:40px; border-left:1px solid #ccc; overflow:hidden;
+            font-size:14px; line-height:38px;
+        }
+            .hpinfor h4 a{ color:#000;}
+    
+/* index products list */
+
+.products
+{
+    float:left; width:100%; clear:both; overflow:hidden;
+}
+    .products .progroup:last-child { margin-bottom:0; }
+    .progroup
+    {
+        float:left; clear:both; margin-bottom:20px; overflow:hidden;
+        width:100%;
+    }
+
+        .probox
+        {
+            float:left; width:306px; margin-right:20px; overflow:hidden;
+        }
+            .products .probox:last-child { width:308px; margin-right:0; }
+            .probox div:last-child { margin-bottom:0; }
+
+.inprosimg, .inprosimg img
+{
+    float:left; clear:both; width:100%;
+    min-height:100%; position:absolute; z-index:1;
+}
+
+.inpros
+{
+    float:left; clear:both;
+    position:relative; margin-bottom:20px;
+    overflow:hidden;
+}
+    .inpros01
+    {
+        width:100%; min-height:306px; max-height:306px;
+    }
+        .inpros01 img{width:100%; min-height:306px; max-height:306px;}
+    .inpros02
+    {
+        width:100%; min-height:143px; max-height:143px;
+    }
+        .inpros02 img{width:100%; min-height:143px; max-height:143px;}
+
+.inprostext
+{
+    float:left; clear:both; position:absolute; width:100%;
+    overflow:hidden; z-index:2; display:none;
+    bottom:0; background: url(../images/i-05.png) top left repeat;
+}
+    .inptheight01 { height:143px; }
+    .inptheight02 { height:80px; }
+
+    .inprostext h4, .inprostext p
+    {
+        margin:0; padding:0; clear:both; color:#fff; 
+    }
+    .inprostext h4
+    {
+        margin:5px 10px; padding-bottom:5px; border-bottom:1px solid #fff;
+        line-height:normal; font-size:14px;
+    }
+    .inprostext p
+    {
+        font-size:12px; margin:10px; margin-top:5px; line-height:normal; font-family:"宋体";
+    }
+
+/* Categorys add style */
+.categorybox
+{
+    float:left; clear:both; width:100%; overflow:hidden;
+}
+    
+    .products .categorybox:last-child{ margin-bottom:0;}
+    
+    .categorybox .hpbox .hpimg, .categorybox .hpbox .hpimg img, .categorybox .hpbox .hpimg .hpflorid
+    { height:380px;}
+    
+    .categorybox .hpbox .categoryimg img{ height:380px; }
+    
+    .categorybox .hpinfor{ height:auto; width:100%;}
+    .categorybox .hpinfor h4
+    {
+        border:none; padding:0; margin:0; color:#666; width:100%;
+        line-height:normal; height:auto; font-weight:normal;
+    }
+        .categorybox .hpinfor h4 a{ color:#666;}
+    .categorybox .hpinfor h2
+    {
+        float:left; clear:both; width:100%; margin:0; padding:10px 0; line-height:normal; color:#d13c43;
+    }
+
+/* Products add style */
+.protleft
+{
+    float:left; width:600px; min-height:1000px; overflow:hidden;
+}
+    .protimg, .protimg img
+    {
+        float:left; width:100%; min-width:100%; height:auto; clear:both;
+    }
+    
+
+.protright
+{
+    float:left; margin-left:60px; display:inline; overflow:hidden; height:auto;
+    width:300px;
+}
+    .thisPrice
+    {
+        clear:both; margin:0; padding:20px 0; font-size:36px; line-height:normal;
+        color:#d13c43;
+    }
+
+    .protaction
+    {
+        float:left; clear:both; width:100%;
+    }
+        .protaction .theblack{ float:left; clear:both; width:100%; margin-bottom:20px;}
+            
+        .protaction .thered{ float:left; clear:both; width:100%;}
+        
+        .protaction .theblack font, .protaction .thered font
+        {
+            width:89.5%; padding:10px 14px; height:30px;
+            font-size:24px; line-height:26px;
+        }
+            .protaction .theblack font:hover, .protaction .thered font:hover{ text-decoration:none; }
+            .protaction .theblack font
+            {
+                background: url(../images/i-09.png) left center no-repeat;
+                background-position:50px 13px;
+            }
+            .protaction .thered font
+            {
+                background: url(../images/i-10.png) left center no-repeat;
+                background-position:60px 13px;
+            }
+
+    .protext
+    {
+        float:left; clear:both; width:100%; margin-top:20px; overflow:hidden;
+    }
+        .protext .maxtitle01, .protext .mtext01{ width:100%;}
+        
+        .protext .maxtitle01{ margin-bottom:0;}
+        
+        .protext .protinfor
+        {
+            float:left; clear:both; margin:0; padding:0; font-size:14px; line-height:24px;
+        }
+
+/* Login and Registered style*/
+
+.loginbox
+{
+    float:left; clear:both; width:870px; min-height:355px; overflow:hidden;
+    margin-left:90px; display:inline;
+}
+
+    .loginform { float:left; clear:both; width:100%; }
+        .loginform td:first-child{ width:70px;}
+        .loginform td:last-child{ min-width:440px;}
+        
+        .loginform td{ padding:10px 0;}
+        .loginform p
+        {
+            padding:10px 0; margin:0; margin-top:10px; border-bottom: 1px solid #000;
+            text-align:left;
+        }
+            .loginform p a{color:#d13c43;}
+            
+        .loginform input[type="text"], .loginform input[type="password"]
+        {
+            height:22px; margin:0; padding:5px; padding-left:30px; line-height:22px; color:#999;
+        }
+            .inmail
+            {
+                float:left; width:320px;
+                background:#fff url(../images/i-11.png) left center no-repeat;
+                background-position:9px 9px; border:1px solid #ededed;
+            }
+            .incookie
+            {
+                float:left; width:287px;
+                background:#fff url(../images/i-12.png) left center no-repeat;
+                background-position:9px 9px; border:1px solid #ededed; border-right:none;
+            }
+                .showcookie
+                {
+                    float:left; width:14px; height:14px; background:#fff;
+                    padding:9px; border:1px solid #ededed; border-left:none;
+                }
+                    .showcookie a
+                    {
+                        float:left; width:14px; height:14px;
+                        background:#fff url(../images/i-13.png) left center no-repeat;
+                        background-position:0 0;
+                    }
+                    .showcookie a:hover
+                    {
+                        text-decoration:none;
+                        background:#fff url(../images/i-13.png) left center no-repeat;
+                        background-position:0 -14px;
+                    }
+    
+        .loginform td label{ color:#d13c43; padding:0 10px;}    
+        .loginform .thered{ float:left;}
+        .loginform .getcode{ float:left; margin-left:30px; display:inline; line-height:28px;}
+        
+        .youremail
+        {
+            background: url(../images/i-14.png) left center no-repeat;
+            background-position:9px 9px;
+        }
+        .yourphone
+        {
+            background: url(../images/i-15.png) left center no-repeat;
+            background-position:9px 9px;
+        }
+        .yourcookie{ width:320px; border-right:1px solid #ededed;}
+
+
+/* check out page style */
+
+.checkleft
+{
+    float:left; width:640px; overflow:hidden;
+}
+    .checkleft .mtext01{ width:550px;}
+    
+.checkright
+{
+    float:left; width:300px; margin-left:20px; display:inline;
+}
+
+    .mycartbox
+    {
+        float:left; width:100%; clear:both; overflow:hidden;
+    }
+    
+    .theshop
+    {
+        float:left; clear:both; width:100%; height:100px; margin-bottom:10px;
+        overflow:hidden; background:#f3f3f3;
+    }
+        .theselect
+        {
+            float:left; width:20px; height:30px; padding: 35px 7px; overflow:hidden; background:#ccc;
+        }
+        .thesimg
+        {
+            float:left; width:90px; height:90px; padding:5px; overflow:hidden;
+        }
+            .thesimg img { width:90px; height:90px; }
+        
+        .thestext
+        {
+            float:left; width:405px; height:100px; overflow:hidden; border-right:1px solid #ccc; border-bottom:1px solid #ccc;
+        }
+            .thestext h4
+            {
+                padding:0; margin:5px; padding-bottom:5px; line-height:22px; overflow:hidden;
+            }
+                .thestext h4 a{ color:#000;}
+            .thestext p
+            {
+                padding:0; margin:5px; margin-top:0; font-size:12px; color:#666; line-height:18px;
+                height:55px; overflow:hidden;
+            }
+            
+        .thesaction
+        {
+            float:left; padding:5px; width:90px; height:90px; overflow:hidden;
+        }
+            .thesaction span, .thesaction div, .thesaction a{ float:left;}
+            
+            .thesjiage{ width:100%; font-size:16px; color:#d13c43; line-height:30px; overflow:hidden;}
+            
+            .addthes
+            {
+                width:90px; height:24px; margin:8px 0; overflow:hidden;
+            }
+                .addthes a, .addthes input{ float:left;}
+                
+                .addthes a
+                {
+                    width:22px; height:22px; overflow:hidden;                   
+                }
+                    .qtadd
+                    {
+                        background:#fbfbfb url(../images/i-17.png) left center no-repeat;
+                        background-position:1px 1px;
+                        border:1px solid #ccc;
+                    }
+                    .qtadd:hover
+                    {
+                        background:#fff url(../images/i-17.png) left center no-repeat;
+                        background-position:1px -19px;
+                        border:1px solid #d13c43;
+                    }
+                    .qtminus
+                    {
+                        background:#fbfbfb url(../images/i-18.png) left center no-repeat;
+                        background-position:1px 1px;
+                        border:1px solid #ccc;
+                    }
+                    .qtminus:hover
+                    {
+                        background:#fff url(../images/i-18.png) left center no-repeat;
+                        background-position:1px -18px;
+                        border:1px solid #d13c43;
+                    }
+                    .addthes a:hover{ text-decoration:none;}
+                .addthes input
+                {
+                    width:36px; height:20px; background:#fff; margin:0 2px; border:1px solid #ccc; line-height:20px; text-align:center;
+                }
+                
+            .thesdel
+            {
+                height:20px; width:56px;
+                padding-left:34px; text-align:left; letter-spacing:10px; line-height:18px; color:#666;
+                background:#dbdbdb url(../images/i-16.png) left center no-repeat;
+                background-position:10px 0;
+            }
+            .thesdel:hover
+            {
+                background:#d13c43 url(../images/i-16.png) left center no-repeat;
+                background-position:10px -20px; color:#fff; text-decoration:none;
+            }
+
+    .theshopaction
+    {
+        clear:both; padding:5px; background:#f3f3f3; height:30px;
+    }
+        .theshopaction b
+        {
+            float:left; font-size:24px; color:#d13c43; line-height:28px;
+        }
+        .theshopaction span{ float:right;}
+            .theshopaction span .thered{ margin-left:10px; display:inline;}
+        
+        
+.hotline
+{
+    float:left; clear:both; width:100%; background:#444444; overflow:hidden;
+}
+    .hotline h4, .hotline div{ padding:10px 0; margin:10px; color:#ccc; line-height:22px;}
+        .hotline h4{ border-bottom:1px solid #ccc;}
+        .hotline div{ padding-top:0; font-size:12px;}
+
+
+/* Enter Orders style */
+.enteroders
+{
+    float:left; clear:both; width:870px;
+    margin-left:90px; display:inline; overflow:hidden;
+}
+    .enteroders .theshop{ height:70px;}
+    .enteroders .thestext{ height:70px; border-right:0; width:800px;}
+    .enteroders .thesimg{ width:70px; height:70px;}
+    .enteroders .thestext p{ height:28px; font-size:14px; line-height:28px; overflow:hidden;}
+    .enteroders .thestext p b
+    {
+        float:left; padding-right:30px; color:#d13c43; min-width:120px; text-align:left;
+    }
+    .enteroders .thestext p u{ color:#d13c43; }
+
+
+/* Select a Shipping Address style */
+.theaddress
+{
+    float:left; clear:both; min-height:24px; border-bottom:1px solid #ededed;
+    padding:5px 5px 5px 0; 
+    background-color:#fbfbfb;
+    background-position:7px 7px;
+    margin-bottom:1px; line-height:22px;
+}
+    .theaddress b
+    {
+        background:#fbfbfb url(../images/i-19.png) left center no-repeat;
+        padding-left:20px;
+    }
+    .theaddress b, .theaddress input, .theaddress div{ float:left;}
+        .theaddress b{ padding-right:10px;}
+        .theaddress .theadr{ width:700px; margin-right:10px; display:inline;}
+        .theaddress a{ color:#d13c43; float:right;}
+    .theaddress input[type="radio"]{float:left; margin:5px 0; margin-right:10px; display:inline;}
+
+/* Payments style */
+.orderto
+{
+    float:left; width:100%; margin-bottom:20px;
+}
+    .orderto h4{ float:left; clear:both; padding:5px 20px; margin:0; line-height:24px; background:#ededed;}
+    .thisrmb
+    {
+        float:left; clear:both; width:100%; min-height:34px; background:#fbfbfb;
+        border-bottom:1px solid #ededed; border-top:1px solid #ededed;
+    }
+        .thisrmb b
+        {
+            float:left; width:760px; height:24px; line-height:20px; margin:5px; font-size:14px; color:#666;
+            overflow:hidden; 
+        }
+            .thisrmb b a{ color:#666;}
+        .thisrmb span
+        {
+            float:right; margin:5px; line-height:20px; color:#d13c43;
+        }
+    .thebuyname
+    {
+        float:left; height:30px; line-height:28px; overflow:hidden;
+    }
+        .thebuyname font{ float:left; margin-right:20px; display:inline; color:#666;}
+
+        .thebuyname font a{color:#d13c43;}
+
+
+/* Story Page style */
+.storybox
+{
+    float:left; clear:both; width:870px;
+    margin-left:90px; display:inline; overflow:hidden;
+}
+
+    .storyform{ float:left; clear:both; width:100%;}
+        .storyform td{ padding:10px 0;}
+        .storyform td:first-child {width: 70px;}
+        .storyform td:last-child { width: 440px; }
+        /*.storyform input[type="text"]
+        {
+            width:345px; border: 1px solid #EDEDED; background:#fff;
+            color: #999999; height: 22px; line-height: 22px; margin: 0; padding: 5px;
+        }
+        .storyform textarea
+        {
+            width:345px; border: 1px solid #EDEDED; background:#fff; font-size:12px;
+            color: #999999; min-height: 100px; line-height:normal; margin: 0; padding: 5px;
+        }*/
+        .storyform td label{ padding:0 10px;}
+        .storyform .remcode{ color:#d13c43;}
+        .storyform .thered{float:left; margin-right:20px; display:inline;}
+
+
+
+/*
+======================================================
+                    User Center Style
+======================================================
+*/
+.usheader
+{
+    float:left; clear:both; width:100%; height:80px;
+    margin:0; padding:0; border-bottom:1px solid #dddddd; overflow:hidden;
+    background: url(../images/Top-bg02.png) left top repeat-x;
+}
+    .usheadbar
+    {
+        width:1000px; height:40px; padding:20px 0; margin:0 auto; clear:both;
+    }
+        .usheadbar .logo01{ font-size:34px; line-height:38px;}
+
+    .usearch
+    {
+        float:right; width:auto; height:40px; overflow:hidden;
+    }
+        .usearch .search { float:left; margin:0; }
+            .usearch .search .searchinto{ width:240px;}
+    .usgohome
+    {
+        float:left; width:40px; height:40px; margin-left:10px; display:inline;
+        background:#dddddd url(../images/icon-10.png) left top no-repeat;
+        background-position:0 0;
+        -webkit-border-radius:2em;
+        -moz-border-radius:2em;
+        border-radius:2em;
+    }
+        .usgohome:hover 
+        {
+            text-decoration:none;
+            background:#d13c43 url(../images/icon-10.png) left top no-repeat;
+            background-position:0 -40px;
+        }
+
+/* User Contents style */
+.userconter
+{
+    float:left; clear:both; width: 1000px; height:auto;
+    margin:20px 0;
+}
+    .usleft
+    {
+        float:left; width:300px; height:auto;
+    }
+    .usright
+    {
+        float:left; width:640px; background:#fff; margin-left:20px; display:inline;
+        padding:20px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+        .uslist
+        {
+            float:left; width:260px; padding:20px;
+            background: url(../images/i-20.png) repeat;
+        }
+            .uslogname
+            {
+                padding:10px; margin:0; clear:both; border:1px solid #fff;
+                line-height:normal; color:#d13c43; text-transform:capitalize;
+                overflow:hidden;
+                background: url(../images/i-21.png) repeat;
+            }
+            .usinfor, .usinlist{float:left; clear:both; list-style:none; margin:0; padding:0; }
+            
+            .usinfor{ margin-top:20px;}
+            
+            .usinlist
+            {
+                width:226px; height:34px; padding-left:34px; overflow:hidden;
+                font-size:14px; line-height:34px;
+                background: url(../images/icon-11.png) left top no-repeat;
+                background-position:0 0;
+            }
+            .usinlist:hover
+            {
+                height:33px; border-bottom:1px solid #d13c43; cursor:pointer;
+                background:#ededed url(../images/icon-11.png) left top no-repeat;
+                background-position:0 -34px;
+            }
+            .usinlist a{ color:#000;}
+            
+            .ulistshow
+            {
+                height:33px; border-bottom:1px solid #d13c43; cursor:pointer;
+                background:#ededed url(../images/icon-11.png) left top no-repeat;
+                background-position:0 -34px;
+            }
+            
+            .usweixin
+            {
+                float:left; clear:both; margin-top:10px; padding:0; overflow:hidden;
+                width:260px; padding:20px; background:#fff; border-top:2px solid #d13c43;
+                -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
+            }
+                .usweixin h4, .usweixin p{ margin:0; padding:0; clear:both;}
+                .usweixin h4
+                {
+                    padding-bottom:10px; font-size:16px;
+                }
+                .usweixin .wxqrcode
+                {
+                    float:left; clear:both; width:218px; height:218px; padding:1px; border:1px solid #ccc;
+                    overflow:hidden; margin:20px;
+                }
+                    .usweixin .wxqrcode img{width:218px; height:218px;}
+
+
+
+.usright .maxtitle01{ width:640px; overflow:hidden;}
+    .usright .maxtitle01 .mtext01{ width:550px;}
+
+.usbox
+{
+    float:left; clear:both; width:100%; overflow:hidden; margin-bottom:20px;
+}
+
+    .usright .usbox:last-child{ margin-bottom:0;}
+    
+    
+    .usbleft
+    {
+        float:left; width:310px; overflow:hidden;
+    }
+    .usbright
+    {
+        float:left; width:310px; overflow:hidden;
+        margin-left:20px; display:inline;
+    }
+        .usbinfor
+        {
+            float:left; width:100%; clear:both; height:auto;
+        }
+            .usbintitle
+            {
+                float:left; width:100%; clear:both; height:auto; min-height:34px; overflow:hidden;
+                background:#f6f6f6; font-size:16px;
+            }
+                .usbintitle span
+                {
+                    float:left; line-height:24px; padding:5px;
+                }
+                .usbintitle a
+                {
+                    color:#d13c43; float:right; line-height:24px; padding:5px; 
+                }
+            .usbintext
+            {
+                float:left; clear:both; width:100%; border-top:2px solid #d13c43; color:#666;
+                font-size:12px;
+            }
+                .usbintext table{ width:100%; clear:both;}
+                .usbintext td{ padding:5px 0; line-height:normal;}
+            .usaddress{ border-bottom:1px solid #ccc; margin-bottom:10px;}
+                .usaddress:last-child{ margin-bottom:0;}
+                .usaddress th{ text-align:left; color:#000; font-size:14px;}
+
+            
+            .usoders th, .usoders td
+            {
+                padding:5px; text-align:left;
+            }
+                .usoders th{ background:#f6f6f6; border-bottom:1px solid #ededed; font-size:14px;}
+                .usoders td{border-bottom:1px solid #ededed;}
+                .usoders td a, .usoders td a b{ color:#000;}
+                .usoders td u { text-decoration:none; color:#d13c43;}
+                .usoders tr:hover{ cursor:pointer; background:#f6f6f6; }
+                .usoders th:last-child, .usoders td:last-child{ text-align:right; width:40px;}
+
+.usbox .storybox{ width:580px; min-height:auto;}       
+.usbox .storyform input[type="text"]{ width:95%;}
+    
+    .usbox .storyform td:first-child{ width:100px;}
+    .usbox .storyform td:last-child{ width:200px;}
+
+.usboxouder { width:640px; overflow:hidden; }
+    .usboxouder .usbintext .enteroders{ width:640px; margin-left:0; min-height:auto; margin-top:10px;}
+    .usboxouder .usbintext .enteroders .theshop .thesimg img{ width:70px; height:70px;}
+    .usboxouder .thestext{ width:544px; overflow:hidden; margin:5px 0;}
+    
+    .usboxouder .usbintext .enteroders .theshop:last-child{ margin-bottom:0;}
+    
+    .usboxouder .usbintext .enteroders .theshop .thestext h4 .usbdel{ float:right; color:#d13c43; font-weight:normal;}
+    .usboxouder .usbintext .enteroders .theshop .thestext p font:last-child{ float:right; font-size:12px;}
+
+
+.odersunber
+{
+    float:left; width:630px; padding:4px; line-height:24px; background:#f6f6f6; border:1px solid #ddd;
+}
+    .odersunber span{ padding-right:40px;}
+    .odersunber a{ float:right; padding:0 5px; color:#D13C43;}
+    .oderlist
+    {
+        float:left; clear:both;
+        width:630px; padding:4px; background:#fff; border:1px solid #ddd; border-top:0; height:auto;
+    }
+    .oderlist div.theshop{ height:auto; background:#fff;}
+/* Blog style */
+.blogright
+{
+    float:left; width:680px; margin-left:20px; display:inline;
+}
+    .blogright .blogbox:last-child{ margin-bottom:0;}
+    .blogbox
+    {
+        float:left; width:680px; clear:both; margin-bottom:20px; overflow:hidden;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+        .blogphoto
+        {
+            float:left; width:540px; height:auto; padding:20px; background:#fff;
+        }
+            .blogphoto h4
+            {
+                float:left; clear:both; width:100%; font-size:16px; line-height:normal; padding:0; margin:0;
+                font-weight:normal;
+            }
+            
+            .blpimg
+            {
+                float:left; clear:both; margin-top:20px; overflow:hidden;
+            }
+            
+            .blogphoto p
+            {
+                float:left; clear:both; width:100%; font-size:14px; line-height:normal;
+                padding:0; margin:0; margin-top:20px;
+                font-weight:normal; color:#666; line-height:22px;
+            }
+            .blogphoto p u, .blogphoto p a{ float:left; text-decoration:none;}
+                .blogphoto p a{ color:#d13c43; margin:0 5px; display:inline;}
+                .blogphoto p a:hover{ text-decoration:underline;}
+            
+        .blogdata
+        {
+            width:50px; text-align:center; color:#fff;
+            background: url(../images/i-05.png) repeat;
+        }
+        .bloglink
+        {
+            width:50px; text-align:center; cursor:pointer;
+            background: url(../images/i-23.png) repeat;
+            
+        }
+            .bloglink:hover{ background:#d13c43; }
+
+        .blphinfor{ width:640px;}
+           
+        .bltext
+        {
+            float:left; clear:both; width:100%; font-size:14px; line-height:normal;
+            padding:0; margin:0; margin-top:20px;
+            font-weight:normal; color:#666; line-height:22px;
+        }
+        .blaction
+        {
+            float:left; clear:both; width:100%; height:34px;
+            background: url(../images/i-24.png) left bottom repeat-x;
+        }
+            .blaction .thesns
+            {
+                float:right; margin:0 10px; height:34px; display:inline; color:#666; line-height:normal;
+                background: url(../images/i-25.png) center bottom no-repeat;
+            }
+            .blaction .thesns font{ padding-left:5px; color:#d13c43;}
+        .blsns
+        {
+            float:left; clear:both; width:640px; padding:20px; background:#fafafa; overflow:hidden;
+        }
+            .blsreply
+            {
+                float:left; clear:both; width:100%; margin-bottom:20px; height:30px; overflow:hidden;
+            }
+                .blsreply input[type="text"]
+                {
+                    float:left; width:520px; height:20px; padding:4px; border:1px solid #ccc;
+                    color:#666;
+                }
+            
+            .blslist, .blslist li 
+            {
+                float:left; clear:both; margin:0; padding:0; width:100%; list-style:none;
+                font-size:12px; line-height:24px; color:#666;
+            }
+                .blslist{border-bottom:1px solid #fff;}
+
+                .blslist li
+                {
+                    padding:5px 0; border-bottom:1px solid #e7e7e7; border-top:1px solid #fff;
+                    height:24px; overflow:hidden;
+                }
+                    .blslist li:hover{ background:#f3f3f3;}
+                    
+                    .blslist li:first-child{ border-top:none;}
+                    
+                .blslist li a
+                {
+                    float:left;
+                    width:80px; height:24px; color:#d13c43; font-weight:bold;
+                    overflow:hidden;
+                }
+                    .blslist li span
+                    {
+                        float:left; width:470px; height:24px; margin:0 10px; display:inline;
+                        overflow:hidden;
+                    }
+                    .blslist li font, .blslist li u{float:right; text-align:right; text-decoration:none;}
+                    .blslist li font{ color:#000;}
+
+
+/* login.html page style */
+
+.linkhome
+{
+    width:1000px; height:auto; clear:both; margin:0 auto;
+    padding:20px 0; overflow:hidden; text-align:left;
+    font-size:68px; line-height:normal; font-weight:bold;
+    text-shadow: 3px 2px 0px #fff;
+}
+    .linkhome a{ color: #6d5f39;}
+    .linkhome a:hover{ color:#d13c43; text-decoration:none;}
+.loginhtml
+{
+    float:none; width:1000px; height:auto; margin:0 auto;
+}
+
+
+/* Story Home Style */
+.storytext
+{
+    float:left; clear:both; width:100%; font-size:14px; line-height:22px;
+}
+
+.storyinfor { float:left; clear:both; width:760px; overflow:hidden; margin: 270px 100px 0 100px; display: inline; }
+    .storyinfor .hpbox
+    {
+        width:330px; height:auto; margin:40px 100px 20px 0; display:inline;
+    }
+        .storyinfor .hpbox:last-child{ margin-right:0;}
+        .storyinfor .hpbox .hpimg { height:330px; overflow:hidden; }
+        .storyinfor .hpbox .hpimg img { height:330px; width:330px; }
+        .storyinfor .hpinfor
+        {
+            clear:both; width:100%; height:auto;
+        }
+        .storyinfor .hpinfor h2
+        {
+           float:left; clear:both; width:308px; margin:0; padding:10px;
+           margin-bottom:20px; border:1px solid #ddd; overflow:hidden;
+           background:url(../images/BG-01.png) left top repeat;
+           text-align:center; line-height: normal;
+           border-radius: 4px;
+		   -moz-border-radius: 4px;    
+		   -webkit-border-radius: 4px;
+        }
+        .storyinfor .hpinfor h2 a{ color:#000;}
+        .storyinfor .hpinfor h2 a:hover{ color:#D13C43;}
+        .storyinfor .hpinfor h4
+        {
+           float:left; clear:both; margin:0; padding:0; height:auto; text-align:left; width:100%;
+           border-left:0; line-height: normal; color:#D13C43;
+        }
+        .storyinfor .hpinfor h4 span{float:right;}
+    .storyinfor .hpbox .stoitem
+    {
+        float:left; clear:both; width:100%; margin-top: 10px;
+        background:#fdfdfd; color:#666; line-height:22px;
+    }
+
+/* 新增前台分页 */
+.onlastpage
+{
+    float:left; width:100%; height:30px; overflow: hidden;
+    padding:10px 0 20px 0;  text-align:center;
+}
+    .onlastpage a
+    {
+        margin:0 3px; border:1px solid #ddd; background:#eee; font-size:12px;
+        height:18px; line-height:18px; padding:4px 10px; text-align:center; color:#D13C43;
+        border-radius: 2px;
+	    -moz-border-radius: 2px;    
+	    -webkit-border-radius: 2px;
+    }
+        .onlastpage a:hover{border:1px solid #D13C43; background:#D13C43; color:#fff;}
